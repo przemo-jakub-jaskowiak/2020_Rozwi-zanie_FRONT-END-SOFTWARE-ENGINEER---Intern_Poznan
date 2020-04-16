@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPokeDEX</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <script src="https://kit.fontawesome.com/d325d1a257.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="txt">
+
+            <img src="tytuł.png" alt="">
+
+        </div> -->
+
+        <video src="PokemonIntro.mp4" autoplay loop muted></video>
+    </header>
+    <main>
+
+        <div class="arr">
+            <i class="fas fa-rocket"></i>
+
+        </div>
+        <div class="txt">
+
+            <img src="tytuł.png" alt="">
+
+        </div>
+
+        <div class="container">
+            <ol id='pokedex'></ol>
+
+        </div>
+
+        <section class="favorite">
+            <div class="hed">
+                <h2>My favorite Pokémon</h2>
+
+            </div>
+            <div class="logo"><img src="logo.png" alt=""></div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="made">
+                            <h3>Blastoise</h3>
+                            <img src="Blastoise.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="made">
+                            <h3>Pikachu</h3>
+                            <img src="Pikachu.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="made">
+                            <h3>Arcanine</h3>
+                            <img src="Arcanine.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="made">
+                            <h3>Squirtle</h3>
+                            <img src="Squirtle.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="made">
+                            <h3>Butterfree</h3>
+                            <img src="motylek.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="made">
+                            <h3>Scyther</h3>
+                            <img src="Scyther.png" alt="">
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="news">
+            <h2>GO <span>PokéDex</span></h2>
+            <div class="ball">
+                <div class="poke"><img src="kulm.png" alt=""></div>
+            </div>
+            <div class="slogan">
+                <p>Easy&Funny<br>Way to learn<br>more about<br>Pokémon</p>
+            </div>
+        </div>
+        <div class="people"><img src="team.png" alt=""></div>
+        <div class="bottom">
+            <h2>Pokémon made to Endure</h2>
+            <div class="boxing">
+                <img src="znakOgien.png" alt="">
+                <h4>Fire</h4>
+            </div>
+            <div class="boxing">
+                <img src="znakWiatr.png" alt="">
+                <h4>Wind</h4>
+            </div>
+            <div class="boxing">
+                <img src="znakWoda.png" alt="">
+                <h4>Water</h4>
+            </div>
+            <div class="boxing">
+                <img src="znakZiemia.png" alt="">
+                <h4>Earth</h4>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="system.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
